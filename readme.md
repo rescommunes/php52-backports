@@ -28,7 +28,7 @@ cd php52-backports
 
 ## Build It
 
-``
+```
 ldconfig
 
 ./buildconf --force
