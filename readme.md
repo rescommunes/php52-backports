@@ -16,6 +16,13 @@ apt-get install   libssl-dev libbz2-dev libcurl3-dev libmcrypt-dev libmhash-dev 
 
 ```
 
+## Update some freetds paths
+```
+ln -s /usr/lib/x86_64-linux-gnu /usr/lib64 
+ln -s /usr/lib/x86_64-linux-gnu/libsybdb.so /usr/lib/x86_64-linux-gnu/libsybdb.so.5 
+
+```
+
 ## Download It
 
 ```
@@ -33,6 +40,7 @@ ldconfig
 
 ./buildconf --force
 
+
 ./configure --with-libdir=lib64 \
   --with-config-file-path=/etc/php5/apache2 \
   --with-pear=/usr/share/php \
@@ -44,6 +52,7 @@ ldconfig
   --with-curl \
   --with-gd \
   --with-unixODBC=/usr \
+  --with-mssql=/usr \
   --with-openssl \
   --with-libxml-dir=/usr \
   --with-pcre-regex \
@@ -66,6 +75,7 @@ ldconfig
   --without-mysql \
   --without-gd \
   --without-gdbm
+
   
 
 make 
