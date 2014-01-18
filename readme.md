@@ -48,6 +48,7 @@ ldconfig
   --enable-bcmath \
   --enable-sockets \
   --enable-xml \
+  --with-xsl \
   --with-bz2 \
   --with-curl \
   --with-gd \
@@ -75,7 +76,6 @@ ldconfig
   --without-mysql \
   --without-gd \
   --without-gdbm
-
   
 
 make 
