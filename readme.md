@@ -68,7 +68,6 @@ ldconfig
   --disable-pdo \
   --disable-xmlreader \
   --disable-xmlwriter \
-  --disable-json \
   --disable-dba \
   --without-mime-magic \
   --without-sqlite \
